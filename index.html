@@ -17,7 +17,7 @@
             <div class="form-inputs">
                 <section class="form-left">
                     <div class="name-input">
-                        <input type="text" id="name" name="name" placeholder="" autocomplete="given-name" required>
+                        <input type="text" id="name" name="name" placeholder="" autocomplete="given-name" required pattern="[A-Za-z]+" minlength="2" maxlength="28">
                         <label id="label-name" for="name">FIRST NAME<span aria-label="required"> *</span></label>
                     </div>
                     <div class="email-input">
@@ -25,17 +25,18 @@
                         <label id="label-email" for="email">E-MAIL<span aria-label="required"> *</span></label>
                     </div>
                     <div class="pass1-input">
-                        <input type="password" name="pass" id="psw1" placeholder="" autocomplete="new-password" required>
+                        <input type="password" name="pass" id="psw1" placeholder="" autocomplete="new-password" pattern=".{8,}"
+                        title="Password must be at least 8 characters long." required>
                         <label id="label-pass1" for="psw">PASSWORD<span aria-label="required"> *</span></label>
                     </div>
                 </section>
                 <section class="form-right">
                     <div class="family-input">
-                        <input type="text" id="family" name="family" placeholder="" autocomplete="family-name" required>
+                        <input type="text" id="family" name="family" placeholder="" autocomplete="family-name" required pattern="[A-Za-z]+" minlength="2" maxlength="28">
                         <label id="label-family" for="family">LAST NAME<span aria-label="required"> *</span></label>
                     </div>
                     <div class="phone-input">
-                        <input type="tel" name="tel" id="phone" placeholder="" autocomplete="tel">
+                        <input type="tel" name="tel" id="phone" placeholder="" autocomplete="tel" pattern="^\+?\d{10,15}" title="Please use a 10 digit or more phone number">
                         <label id="label-phone" for="phone">PHONE</label>
                     </div>
                     <div class="pass2-input">
