@@ -149,6 +149,41 @@ input:focus {
     border: 1px solid #edb77d;
 }
 
-input:not(:placeholder-shown) + label {
-    opacity: 0;
+
+label {
+    transition: all .5s ease;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+    background-color: #edb77d;
+    color: aliceblue;
+    padding: 2px 8px;
+    font-size: 0.7rem;
+}
+
+
+input:not(:placeholder-shown) + #label-name,
+input:focus + #label-name,
+input:not(:placeholder-shown) + #label-family,
+input:focus + #label-family {
+    top: -6px;
+}
+
+
+
+
+input:not(:placeholder-shown) + #label-email,
+input:focus + #label-email,
+input:not(:placeholder-shown) + #label-phone,
+input:focus + #label-phone {
+    top: 94px;
+}
+
+
+input:not(:placeholder-shown) + #label-pass1,
+input:focus + #label-pass1,
+input:not(:placeholder-shown) + #label-pass2,
+input:focus + #label-pass2 {
+    top: 197px;
 }
