@@ -202,3 +202,8 @@ input:not(:placeholder-shown) + #label-pass2,
 input:focus + #label-pass2 {
     top: 197px;
 }
+
+
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
