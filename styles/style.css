@@ -207,3 +207,43 @@ input:focus + #label-pass2 {
 input:invalid:not(:placeholder-shown) {
     border: 1px solid red;
 }
+
+
+
+/* Background logo */
+
+section.left {
+    position: relative;
+}
+
+
+.logo-container {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-container::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    z-index: 0;
+    opacity: 0.5;
+}   
+
+
+.logo-container img {
+    z-index: 1;
+    height: 100%;
+    width: auto;
+}
+
+
+
+
