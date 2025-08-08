@@ -158,9 +158,17 @@ input:not(:placeholder-shown) + label,
 input:focus + label {
     background-color: #edb77d;
     color: aliceblue;
-    padding: 2px 8px;
+    padding: 2px 0px 2px 8px;
     font-size: 0.7rem;
 }
+
+input:not(:placeholder-shown) + #label-phone,
+input:focus + #label-phone {
+    padding: 2px 8px;
+}
+
+
+
 
 input:not(:placeholder-shown) + label > span,
 input:focus + label > span {
