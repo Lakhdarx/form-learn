@@ -50,6 +50,8 @@ label {
 
 input {
     width: 17.4rem;
+    height: 2.05rem;
+    /* height: 1.79rem; */
     font-size: 0.9rem;
     margin-top: 5px;
     padding: 6px 6px 6px 10px;
@@ -119,7 +121,7 @@ button#submit:hover {
 #label-family {
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 14px;
 }
 
 
@@ -127,7 +129,7 @@ button#submit:hover {
 #label-phone {
     position: absolute;
     left: 10px;
-    top: 110px;
+    top: 114px;
 }
 
 
@@ -135,8 +137,18 @@ button#submit:hover {
 #label-pass2 {
     position: absolute;
     left: 10px;
-    top: 210px;
+    top: 217px;
 }
 
+input {
+    transition: border-color .5s ease-in;
+}
 
+input:not(:placeholder-shown),
+input:focus {
+    border: 1px solid #edb77d;
+}
 
+input:not(:placeholder-shown) + label {
+    opacity: 0;
+}
