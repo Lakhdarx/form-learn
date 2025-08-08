@@ -162,6 +162,13 @@ input:focus + label {
     font-size: 0.7rem;
 }
 
+input:not(:placeholder-shown) + label > span,
+input:focus + label > span {
+    visibility: hidden;
+}
+
+
+
 
 input:not(:placeholder-shown) + #label-name,
 input:focus + #label-name,
