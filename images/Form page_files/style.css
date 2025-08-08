@@ -129,14 +129,3 @@ button#submit:hover {
     left: 10px;
     top: 110px;
 }
-
-
-#label-pass1, 
-#label-pass2 {
-    position: absolute;
-    left: 10px;
-    top: 210px;
-}
-
-
-
